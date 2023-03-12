@@ -1,0 +1,192 @@
+
+.map{
+    height: 100vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.dis , .state{
+    display: flex;
+    height: max-content;
+    justify-content: center;
+    align-items:center;
+    justify-content: space-between;
+    width: auto;
+}
+.selector{
+    color: white ; 
+    display:flex;
+   flex-direction: column;
+   text-align: center;
+background-color:rgb(0, 88, 29) ;
+   align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: fit-content;
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+#slct1 , #slct2 {
+    width: 400px;
+    margin: 5px;
+}
+.selector button{
+    font-size: 30px;
+    margin-top: 10px;
+    width: 120px;
+    height: 50px;
+    color: rgb(0, 56, 9);
+    background-color: rgb(220, 255, 226);
+    border: 0;
+    font-family: 'Sorts Mill Goudy', serif;
+border-radius: 3px;
+
+}
+label{
+    font-size: 40px;
+    
+    color: white ; 
+    font-family: 'Sorts Mill Goudy', serif;
+    }
+
+
+    .selector select{
+        font-size: 20px;
+        font-family: 'Sorts Mill Goudy', serif;
+        background-color: rgb(255, 249, 238);
+        color: black;
+        font-weight: 1000;
+        border-radius: 3px;
+        height: 30px;
+        width: fit-content;
+        width: 400px;
+    
+        border: white ;
+    
+    
+    }
+    
+    .selector select:checked{
+        color: black;
+    }
+    .barone , .bartwo{
+        width: 250px;
+        background-color: rgb(2, 84, 44 , 0.6);
+height:390px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        justify-content: space-evenly;
+    }
+    
+    .box{
+        width: 220px;
+        height: 120px;
+        background-color: rgb(238, 233, 228);
+        border-radius: 5px;
+        
+        text-align: center;
+        color: black;
+        font-family: 'Sorts Mill Goudy', serif;
+    
+        font-weight: 900;
+    
+    }
+    
+    .box a span{
+        color:black ;
+        font-size: 16px;
+    }
+
+
+
+.eg{
+    width: 220px;
+    height: 120px;
+    background-color: rgb(238, 233, 228);
+    border-radius: 5px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-family: 'Sorts Mill Goudy', serif;
+    font-weight: 900;
+display: none;
+
+}
+
+
+.cpcb:hover + .cpcbeg{
+    display:block;
+}
+.cpcb:hover{
+    display:none;
+}
+.niti:hover + .nitieg{
+    display:block;
+}
+.niti:hover{
+    display:none;
+}
+.un:hover + .uneg{
+    display:block;
+}
+.un:hover{
+    display:none;
+}
+.dst:hover + .dsteg{
+    display:block;
+}
+.dst:hover{
+    display:none;
+}
+.life:hover + .lifeg{
+    display:block;
+}
+.life:hover{
+    display:none;
+}
+.forest:hover + .foresteg{
+    display:block;
+}
+.forest:hover{
+    display:none;
+}
+
+
+
+
+
+
+    @media screen and (max-width:1000px) {
+
+        .barone , .bartwo{
+            display: none;
+        }
+        .map{
+            all: unset;
+            width: 100%;
+            height: 100vh;
+          display: flex;
+          flex-direction: column;
+        justify-content: center;
+          align-items: center;
+        }
+        
+        }
+
+        
+
+
+
+
+    @media screen and (max-width:450px) {
+        #slct1 , #slct2 {
+            width: 250px;
+        }
+        }
