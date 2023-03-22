@@ -1,0 +1,23 @@
+.treeimg{
+    animation: caro 6s infinite;
+}
+
+@keyframes caro {
+    0%{
+background-image: url('https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51TV6W-ETmL.jpg');
+background-repeat: none;
+background-size: cover ;
+    }
+
+    50%{
+        background-image: url('https://img.staticmb.com/mbcontent/images/uploads/2022/7/a-corn-plant-or-Dracaena-Fragrans.jpg');
+background-repeat: none;
+background-size: cover ;
+    }
+
+    0%{
+        background-image: url('https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51TV6W-ETmL.jpg');
+background-repeat: none;
+background-size: cover ;
+    }
+}

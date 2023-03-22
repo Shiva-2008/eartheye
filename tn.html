@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="head">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="beautify.css">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="nav.css">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body style="background-color: rgba(151, 255, 200, 0.638);" onload="doer()"  >
+    
+    <div class="container" id="cont">
+        <div class="title">
+            <div class="namer" translate="no">
+                <div class="namerr">
+            <img src="earth.gif" height="70px">
+Earth Eye</div> 
+<div class="marq">
+<marquee >Empowering the Environment </marquee>
+</div>
+</div>
+
+<div  class="toggle" onclick="toggle()">X</div>
+        </div>
+
+        <div class="nav-section nact" id="toggle">
+            <ul class="nact">
+                <li> <a href="india.html">Check Air quality</a> 
+                </li>
+                <li><a href="quiz.html"> Take Enviro quiz </a></li>
+            </ul>
+        </div>
+    </div>
+
+    
+<!-- <marquee class="messenger" scrollamount="7" style="display:flex;align-items: center;height: 80px;"> <img src="tree.gif" height="80px" alt="">&nbsp;&nbsp;&nbsp;&nbsp;Be the solution to run off the pollution &nbsp;&nbsp;&nbsp;&nbsp;<img src="tree.gif" height="80px" alt=""></marquee> -->
+<h2 class="changeloc"> &nbsp; <a href="india.html" style="color:white;">
+    Change Location </a></h2>
+
+<div class="disdiscontmain" id="fakey">
+    <div class="discontainer">
+        <div class="disdetails" style="font-size: 30px;"><div style="all: unset;font-size: 23px; text-align: center;"><img src="load.gif" height="60px" width="60px"> <br>
+        Loading details</div></div>
+        <div class="dismaincont" style="font-size: 30px;"> <div style="all: unset;font-size: 23px; text-align: center;"><img src="load.gif" height="60px" width="60px">
+        <br>
+    Just a minute...
+    </div></div>
+            
+    </div>
+    
+</div>
+<div class="disdiscontmain" id="truey">
+<div class="discontainer">
+    <div class="disdetails">
+        <div class="dismap">
+            <img id="disimg" src="india.png" width="70%" height="90%">
+    </div>
+<div class="disname">
+    <br>
+<h1 id="disname"></h1>
+<h3 id="statename"></h3>
+</div>
+
+</div>
+
+
+<div class="dismaincont" id="truey">
+
+
+    <div class="disair" id="disair">
+        <div class="airmain">
+                <div class="index">
+              
+                      <div class="number" id="number">
+                        <h2 id="aqi" >
+                           
+                        </h2>
+                        
+                             <h3 style="  font-size: 30px;">Air Quality Index</h3>
+                      </div>
+
+                       <div class="comment" style="padding:0;margin: 0;">
+                      <h1 id="majorcomm" style="padding:0;margin: 0;"></h1>
+                      <h4 id="prime" style="padding:5px 0px 0px 0px;margin: 0;font-size: 20px;color: rgb(92, 21, 21);">PM 2.5 :  </h4>
+               
+                      <br>
+                      <br>
+                 
+                    <button id="prebut" onclick="dhd()">Click to Show Precautions</button>
+                      </div> 
+                    </div> 
+                       
+                     <div class="prec" id="precbx">
+                        <span id="precaution" class="noco" style=" font-size: 22px;text-align: justify;">
+    <br>
+                        </span>
+                      </div>
+
+   </div>    
+    </div>
+
+
+
+
+
+    <div class="distree" id="distree">
+        <div class="treeimg">
+    
+        </div>
+<div class="treesug" >
+    <h2>Suggested trees to Plant</h2>
+    <div id="itree" class="sugbx">
+        <h3>Indoor Plants: &nbsp;&nbsp;</h3> 
+    </div>
+    <div id="otree" class="sugbx">
+        <h3>    Outdoor Trees:&nbsp;&nbsp; </h3> 
+
+    </div>
+</div>
+
+    </div>
+
+
+
+
+
+
+
+
+  <div class="disland" id="disland">
+    <h1>-- Land --</h1>  
+  </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="dataaqi">
+
+<div id="Andhra Pradesh">
+
+</div>
+
+<div id="Tamil Nadu" style="display:none;">
+<div name="airvisual_widget" key="64005c5343ba9c7175fc0a36" ></div>
+<div class="aqiValue">7</div>
+<div name="airvisual_widget" key="6401802bb7957cea89461e74"></div> 
+<div name="airvisual_widget" key="64018ad61420694601becfe5"></div>
+<div name="airvisual_widget" key="64018ee57ce2deb6fce4fe75"></div>
+<div name="airvisual_widget" key="640192c943ba9c7175136673"></div>
+<div name="airvisual_widget" key="640195067ce2deb6fce581b6"></div>
+<div name="airvisual_widget" key="6401955143ba9c717513b083"></div>
+<div name="airvisual_widget" key="640195b0bb642363022ced86"></div>
+<div name="airvisual_widget" key="64021cd27ce2deb6fcef47e0"></div>
+<div name="airvisual_widget" key="64021db51420694601c96ca6"></div>
+<div name="airvisual_widget" key="64021d7f1c42817c95a6fc09"></div>
+<div name="airvisual_widget" key="64021dfc43ba9c71751d85be"></div>
+<div name="airvisual_widget" key="64021e22bb6423630236ba94"></div>
+<div name="airvisual_widget" key="64021e9e43ba9c71751d9000"></div>
+<div class="aqiValue">7</div>
+<div name="airvisual_widget" key="64021f9443ba9c71751da10e"></div>
+<div class="aqiValue">7</div>
+<div name="airvisual_widget" key="6402201d43ba9c71751dad8d"></div>
+<div name="airvisual_widget" key="640220557ce2deb6fcef88e4"></div>
+<div name="airvisual_widget" key="640220b11420694601c9ad4b"></div>
+<div class="aqiValue">7</div>
+<div class="aqiValue">7</div>
+<div name="airvisual_widget" key="6402212d1c42817c95a74fd1"></div>
+<div name="airvisual_widget" key="6402215fbb64236302370a70"></div>
+<div name="airvisual_widget" key="640221dd43ba9c71751de878"></div>
+<div name="airvisual_widget" key="6402222cb7957cea8951d621"></div>
+<div name="airvisual_widget" key="640222671c42817c95a777b4"></div>
+<div class="aqiValue">7</div>
+<div name="airvisual_widget" key="6402232243ba9c71751e10f5"></div>
+<div name="airvisual_widget" key="640223a31420694601ca0955"></div>
+<div name="airvisual_widget" key="640223eabb642363023751f6"></div>
+<div name="airvisual_widget" key="64022416b7957cea89521245"></div>
+<div class="aqiValue">7</div>
+<div name="airvisual_widget" key="640224a11420694601ca1aac"></div>
+<div name="airvisual_widget" key="640224fe7ce2deb6fcf00aad"></div>
+<div name="airvisual_widget" key="6402252743ba9c71751e36dc"></div>
+<div name="airvisual_widget" key="640225691c42817c95a7ba7d"></div>
+
+
+
+
+
+
+
+        </div>  
+
+
+
+    </div>
+
+    <script>
+        function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');}
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+
+
+<script type="text/javascript" src="https://widget.iqair.com/script/widget_v3.0.js">
+
+    
+</script>
+
+
+
+
+<script  src="script.js">
+
+    
+</script>
+
+</body>
+</html>

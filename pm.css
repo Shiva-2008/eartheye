@@ -1,0 +1,41 @@
+.treeimg{
+    animation: caro 10s infinite;
+}
+
+@keyframes caro {
+    0%{
+background-image: url('https://treetify.in/wp-content/uploads/2021/12/Jamun-Tree-Syzygium-cumini2.jpg');
+background-repeat: none;
+background-size: cover ;
+    }
+
+    20%{
+        background-image: url('https://a-z-animals.com/media/2022/09/Shutterstock_723552646.jpg');
+background-repeat: none;
+background-size: cover ;
+    }
+
+    40%{
+        background-image: url('http://cdn.shopify.com/s/files/1/0284/2450/products/Hoya-carnosa-Wax-Plant2_1024x.jpg?v=1592046552');
+background-repeat: none;
+background-size: cover ;
+    }
+    
+    60%{
+        background-image: url('https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/518CAevOEUL.jpg');
+background-repeat: none;
+background-size: cover ;
+    }
+
+    80%{
+        background-image: url('https://cdn.shopify.com/s/files/1/0579/7924/0580/products/anthurium-red-plant-31798804414596.jpg?v=1675665732&width=1500');
+background-repeat: none;
+background-size: cover ;
+    }
+
+    100%{
+        background-image: url('https://treetify.in/wp-content/uploads/2021/12/Jamun-Tree-Syzygium-cumini2.jpg');
+        background-repeat: none;
+background-size: cover ;
+    }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="quiz.css">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200&family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body onload="options()">
+    
+    <div class="container" id="cont">
+        <div class="title">
+            <div class="namer" translate="no">
+                <div class="namerr">
+            <img src="earth.gif" height="70px">
+Earth Eye</div> 
+<div class="marq">
+<marquee >Empowering the Environment </marquee>
+</div>
+</div>
+
+<div  class="toggle" onclick="toggle()">X</div>
+        </div>
+
+        <div class="nav-section nact" id="toggle">
+            <ul class="nact">
+                <li> <a href="india.html">Check Air quality</a> 
+                </li>
+                <li><a href="quiz.html"> Take Enviro quiz </a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="quiznumber" id="quizn" >0</div>
+<div class="quiz-container" >
+<div class="quiz-box" id="quizbox">
+    <div class="quiz-question" id="quizq" >
+      
+    </div>
+
+    <div class="quiz-answers" id="quiza">
+        <div class="answer" id='opt1' onclick="valuefinder1(this.id)"></div>
+        <div class="answer"id='opt2' onclick="valuefinder2(this.id)"></div>
+        <div class="answer" id='opt3' onclick="valuefinder3(this.id)"></div>
+        <div class="answer" id='opt4' onclick="valuefinder4(this.id)"></div>
+    </div>
+
+    <div class="quiz-submit" id='quizs' onclick="qsubmit()">
+Next
+    </div>
+</div>
+<h1 id="scoremsg">
+
+</h1>
+
+
+</div>
+
+
+<script src="quiz.js">
+
+</script>
+</body>
+</html>

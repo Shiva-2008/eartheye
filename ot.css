@@ -1,0 +1,36 @@
+.treeimg{
+    animation: caro 10s infinite;
+}
+
+@keyframes caro {
+    0%{
+background-image: url('https://www.gardeningknowhow.com/wp-content/uploads/2021/02/single-big-beech-tree.jpg');
+background-repeat: none;
+background-size: cover ;
+    }
+
+    25%{
+        background-image: url('https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/414YvLQoVYL._SX466_.jpg');
+background-repeat: none;
+background-size: cover ;
+    }
+
+    50%{
+        background-image: url('http://cdn.shopify.com/s/files/1/0579/7924/0580/products/spider-plant-with-hanging-pot-31809173356676.jpg?v=1675618563');
+background-repeat: none;
+background-size: cover ;
+    }
+    
+    75%{
+        background-image: url('https://peppyflora.com/wp-content/uploads/2020/10/Golden-Pothos-Golden-Money-Plant-Lime-Pothos-Peppyflora-Product-01-a-moz.jpg');
+background-repeat: none;
+background-size: cover ;
+    }
+
+
+    100%{
+        background-image: url('https://www.gardeningknowhow.com/wp-content/uploads/2021/02/single-big-beech-tree.jpg');
+background-repeat: none;
+background-size: cover ;
+    }
+}

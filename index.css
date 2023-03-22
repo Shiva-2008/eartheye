@@ -1,0 +1,301 @@
+.content{
+        display: flex;
+        align-items: center;
+    flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-evenly;
+        background-image: url('shot.gif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0;
+        margin: 0;
+        min-height: 100vh;
+    }
+
+*{
+    max-width: 100%;
+}
+    
+.subcon{
+    height: fit-content;
+    border-radius: 2px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    max-width: 100%;
+    color: rgb(3, 61, 21);
+font-weight: bold;
+    width: fit-content;
+text-shadow:  1px 1px 20px rgb(187, 255, 191) , 1px 1px 20px white, 1px 1px 20px white, 1px 1px 20px white, 1px 1px 20px white, 1px 1px 20px white , 1px 1px 20px white, 1px 1px 20px white , 1px 1px 20px white , 1px 1px 20px white , 1px 1px 20px white , 1px 1px 20px white ,  1px 1px 20px white, 1px 1px 20px white, 1px 1px 20px white, 1px 1px 20px white, 1px 1px 20px white , 1px 1px 20px white, 1px 1px 20px white , 1px 1px 20px white , 1px 1px 20px white , 1px 1px 20px white , 1px 1px 20px white  ;
+}
+
+.titletrx{
+    font-size:71px;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    
+    
+    }
+    
+    .main-header , .sub-header , .button{
+        font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Sorts Mill Goudy', serif;
+    
+    }
+    
+
+    .captiontrx{
+        font-size: 22px;
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    
+    }
+    
+    .subcon1{
+        background-color: rgba(0, 34, 11, 0.6) ;
+        display: flex;
+        text-align: justify;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 10px;
+        height: 300px;
+        color: white;
+        width: 400px;
+    
+    }
+    .know{
+        height: 60px;
+        color:rgb(0, 58, 0) ;
+    
+        text-decoration: none !important;
+    
+        font-size: 30px;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: 900;
+        width: 160px;
+        height: 40px;
+        background-color: white;
+        animation: slidinger 1.4s infinite;
+    }
+    
+    .know a{
+        color:rgb(0, 58, 0) ;
+    
+        text-decoration: none !important;
+    }
+    @keyframes slidinger {
+        0%{
+    transform: translateY(40%);   
+     }
+        50%{
+            transform: translateY(100%);   
+        }
+        100%{
+            transform: translateY(40%);   
+        }
+        
+    }
+    #trxster1 , #trxster2{
+    width: 100%;
+    color: rgb(3, 61, 21);
+}
+
+.blinker{
+    animation: blinker 0.5s infinite ;
+}
+@keyframes blinker {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#trxster , #trxsterr{
+    font-size:30px;
+    }
+   
+
+
+
+    .hometext{
+        min-height:100vh ;
+        height: max-content;
+        background-color:rgb(34, 140, 13) ;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        position: static;
+    }
+.hbe{
+background-color: whitesmoke;
+}
+
+.hbo{
+    background-color: rgb(195, 255, 152);
+
+}
+    .homebox{
+        min-height: 150px;
+        border-radius: 10px;
+        margin: 10px;
+        width: 98%;
+        height: max-content;
+        display: flex;
+        align-items: center;
+    justify-content: space-evenly ;
+    } 
+
+.homebtext{
+    text-align: center;
+    width: calc(100% - 200px);
+    top:0;
+}
+
+.homebtext p{
+    font-size: 20px;
+}
+
+.hbo::after{
+    content: '';
+    height:150px;
+background-color: whitesmoke;
+    width: 160px;
+    top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: 3%;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.hbe::after{
+    content: '';
+    height:150px;
+    background-color: rgb(186, 253, 159);
+    width: 160px;
+    top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: 3%;
+  border-radius: 0px 10px 10px 0px;
+}
+.whatwedo{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color:rgb(35, 136, 14) ;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 23px;
+}
+.whatwedo h1{
+    padding-top: 50px;
+}
+
+
+
+@keyframes anima {
+    0%{
+opacity: 1;   }
+   
+    50%{
+opacity: 0; }
+
+100%{
+    opacity: 1; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+    
+
+.homebox::after{
+  all: unset;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:780px) {
+
+.content{
+margin-top: 50px;
+padding: 0;
+min-height: 90vh;
+
+justify-content: center;
+}
+.titletrx{
+    font-size:55px;
+    
+}
+.subcon1{
+    position: static;
+
+}
+
+#trxster , #trxsterr{
+font-size:6vw;
+}
+
+}
