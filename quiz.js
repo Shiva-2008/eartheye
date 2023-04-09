@@ -7,7 +7,7 @@ function options()
       "What is meant by AQI or Air Quality Index" , 
       "What precautions should be taken for an AQI of 37" ,
       "What gas along with NO2 is responsible for acid rain" ,
-      "The none greenhouse gas from the following is" ,
+      "The non greenhouse gas from the following is" ,
       "Select the incorrect option" ,
       
       
@@ -176,7 +176,7 @@ if (  document.getElementById('opt1').classList.contains('bgchanger') || documen
    "What is meant by AQI or Air Quality Index" , 
    "What precautions should be taken for an AQI of 37" ,
    "What gas along with NO2 is responsible for acid rain" ,
-   "The none greenhouse gas from the following is" ,
+   "The non greenhouse gas from the following is" ,
    "Select the incorrect option" ,
    
    
@@ -256,7 +256,7 @@ copt:'Index created by culmination of the effects of all pollutants in air'
       if (qn == 4) {
         
     
-         document.getElementById('scoremsg').innerHTML = 'Your score is: ' + mark +  ' out of 4' + '<br>'
+         document.getElementById('scoremsg').innerHTML = 'Your score is <br>' + mark +  ' out of 4' + '<br>'
 setTimeout(0 , endq())
       }
 
@@ -270,5 +270,29 @@ setTimeout(0 , endq())
 
 function endq(){
    document.getElementById('quizbox').style.display = 'none'
+   if (mark==1){
+      document.getElementById('remark').innerHTML = 'Time to learn more !'
+      document.getElementById('remark').style.color = 'red'
+
+
+   }
+   if (mark==2){
+      document.getElementById('remark').innerHTML = 'You can do better !'
+      document.getElementById('remark').style.color = 'orange'
+
+
+   }
+   if (mark==3){
+      document.getElementById('remark').innerHTML = 'Good Job!'
+      document.getElementById('remark').style.color = 'yellowgreen'
+
+
+   }
+   if (mark==4){
+      document.getElementById('remark').innerHTML = 'Fantastic!'
+      document.getElementById('remark').style.color = 'green'
+
+
+   }
 
 }
