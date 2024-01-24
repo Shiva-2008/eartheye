@@ -468,3 +468,143 @@ if (state == 'Tamil Nadu' ) {
     
 }
 }
+
+
+
+document.getElementById('disimg').setAttribute('src' , aq )
+
+var mcom = document.getElementById('majorcomm')
+var pollutant = document.getElementById('prime')
+var prec = document.getElementById('precaution')
+var disair = document.getElementById('disair')
+var precbox = document.getElementById('precbx')
+var preb = document.getElementById('prebut')
+disair.style.display = 'none'
+document.getElementById('truey').style.display = 'none'
+
+const timm = setTimeout(loll , 6500)
+
+
+
+function loll(){
+
+
+
+document.getElementById('primez').innerHTML += ppol
+
+
+pollutant.innerHTML +=  document.getElementsByClassName('outdoor-pm25-value').item(disnumber).innerHTML
+
+var hh = document.getElementsByClassName('aqiValue').item(disnumber).textContent
+document.getElementById('aqi').innerHTML = hh
+var aq = document.getElementById('aqi').innerHTML
+if (localStorage.getItem('aircheck') == 1) {
+    disair.style.display = 'block'
+
+}
+
+document.getElementById('truey').style.display = 'flex'
+document.getElementById('fakey').style.display = 'none'
+
+
+if (aq <= 50) {
+
+    disair.style.backgroundColor = '#00dd00'
+mcom.innerHTML = "Good"
+prec.innerHTML = 'You are living in a safe area'
+precbox.style.backgroundColor = '#b7ff8d'
+
+}
+
+else if (aq > 50 && aq <= 100) {
+    disair.style.backgroundColor = '#ffff47'
+    mcom.innerHTML = "Moderate and Safe"
+    prec.innerHTML = '<li> Close your windows to avoid dirty outdoor air</li>  <br> <li> Sensitive groups should reduce outdoor exercise. </li> &nbsp'
+    precbox.style.backgroundColor = '#ffe599'
+
+    
+
+
+}
+else if (aq > 100 && aq <= 200) {
+    disair.style.backgroundColor = '#ffb121'
+    mcom.innerHTML = "Unhealthy for Sensitive Groups"
+    prec.innerHTML = '<li>Run an air purifier</li>  <br><li>  Everyone should reduce outdoor exercise</li>  <br> <li>Sensitive groups should wear a mask outdoors</li>  <br>   <li>Close your windows to avoid dirty outdoor air </li> '
+    precbox.style.backgroundColor = '#f6b26b'
+
+
+
+}
+else if (aq > 200 && aq <= 300) {
+    disair.style.backgroundColor = '#ff5b5b'
+    mcom.innerHTML = " Unhealthy"
+    prec.innerHTML = '<li>Avoid prolonged activity outdoors and consider moving it indooors </li> <br> <li>If belonging to a sensitive group avoid all activity outdoors</li> '
+    precbox.style.backgroundColor = '#ffa59e'
+
+
+}
+else if (aq > 300 && aq <= 400) {
+    disair.style.backgroundColor = '#57033a'
+    mcom.innerHTML = "Very Unhealthy and Poor"
+    preb.style.color = 'white'
+document.getElementById('prime').style.color = 'white'
+    precbox.style.backgroundColor = '#ac5b83'
+    precbox.style.color = 'white'
+
+    disair.style.color = 'white'
+    prec.innerHTML = '<li>Avoid all activty outdoors</li>  <br> <li>If belonging to a sensitive group remain indoors and follow tips for keeping particle levels low indoor</li> '
+
+
+
+}
+else if (aq > 400 ) {
+    disair.style.color = 'white'
+    precbox.style.color = 'white'
+    preb.style.color = 'white'
+    document.getElementById('prime').style.color = 'white'
+
+    prec.innerHTML = '<li>Avoid all activty outdoors</li>  <br> <li>If belonging to a sensitive group remain indoors and follow tips for keeping particle levels low indoor</li> '
+}
+else if (aq > 400 ) {
+    disair.style.color = 'white'
+    precbox.style.color = 'white'
+    preb.style.color = 'white'
+    document.getElementById('prime').style.color = 'white'
+    disair.style.backgroundColor = 'maroon'
+    mcom.innerHTML = "Toxic and Hazardous"
+    prec.innerHTML = '<li>Avoid all activty outdoors</li> <br> <li>If belonging to a sensitive group remain indoors and follow tips for keeping particle levels low indoor</li> '
+    precbox.style.backgroundColor = '#4c1818'
+
+}
+
+var pollutant = document.getElementById('prime')
+var pollutant = document.getElementById('prime').textContent
+
+if (pollutant.includes('PM')) {
+
+@@ -604,9 +604,6 @@ setTimeout(treer , 500 )
+
+}
+
+function treer(){
+
+}
+
+
+}
+    
+    function dhd() {
+document.getElementById('precaution').classList.toggle('noco')
+var datqi = document.getElementById('dataaqi').children
+
+for(var i in datqi.length) {
+if(document.getElementById('dataaqi').children.item(i).id != 'Tamil Nadu' )
+
+{
+ var oho =   document.getElementById('dataaqi').children.item(i).id
+ alert(oho)
+ oho.remove()
+}
+
+}
+}
