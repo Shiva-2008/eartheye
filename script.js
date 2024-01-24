@@ -567,7 +567,7 @@ else if (aq > 400 ) {
 
 }
 
-var pollutant = document.getElementById('prime')
+var pollutant = document.getElementById('prime').textContent
 
 if (pollutant.includes('PM')) {
     
@@ -604,9 +604,6 @@ setTimeout(treer , 500 )
 
 }
 
-function treer(){
- 
-}
 
   
 }
