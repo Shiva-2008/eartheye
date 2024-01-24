@@ -604,12 +604,12 @@ setTimeout(treer , 500 )
 
 }
 
-}
+
 
 function treer() {
   
 }
-}
+
 
 function dhd() {
 document.getElementById('precaution').classList.toggle('noco')
