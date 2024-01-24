@@ -156,7 +156,7 @@ district.options.add(newoption)
     
 }
 
-}
+
 
 function saver() {
     var almost = document.getElementById('slct1')
@@ -592,7 +592,7 @@ function treer(){
 
 
 }
-    
+    }
     function dhd() {
 document.getElementById('precaution').classList.toggle('noco')
 var datqi = document.getElementById('dataaqi').children
