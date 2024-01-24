@@ -589,7 +589,7 @@ if (ppol.includes('NO2')) {
     document.getElementById('head').innerHTML +=     '<link rel="stylesheet" href="no.css">'
      
 } 
-if (ppol.includes('PM')) {
+if (ppol.includes('')) {
     document.getElementById('itree').innerHTML +=  treessug[0].PMI
     document.getElementById('otree').innerHTML +=  treessug[0].PM
     document.getElementById('head').innerHTML +=     '<link rel="stylesheet" href="pm.css">'
