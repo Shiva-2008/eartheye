@@ -483,21 +483,7 @@ const timm = setTimeout(loll , 6500)
 
 
 function loll(){
-const treessug = [
 
-{
-    PM: 'Jamun , Conifers such as Pine, ' , 
-    SO2 : 'Alfalfa Plants, '  ,
-    O3:  'Beech trees, ' ,
-    NO2: ''  ,
-    PMI : 'Hoyas, Philodendrons, Annthuriums, ' , 
-    SO2I : 'Alfalfa Plants, '  ,
-    O3I: 'Snake plant, Spider plant, and Golden pothos, '  ,
-    NO2I: 'Peace lily, Corn plant, '  ,
-}
-
-
-]
 
 
 document.getElementById('primez').innerHTML += ppol
