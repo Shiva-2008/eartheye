@@ -486,18 +486,35 @@ function loll(){
 const treessug = [
 
 {
-    PM: 'Jamun , Conifers such as Pine, ' , 
-    SO2 : 'Alfalfa Plants, '  ,
-    O3:  'Beech trees, ' ,
-    NO2: ''  ,
-    PMI : 'Hoyas, Philodendrons, Annthuriums, ' , 
-    SO2I : 'Alfalfa Plants, '  ,
-    O3I: 'Snake plant, Spider plant, and Golden pothos, '  ,
-    NO2I: 'Peace lily, Corn plant, '  ,
-}
+    PM1: 'PANAPEN, JACKFRUIT  ' , 
+    PM2:'PEEPAL, BANYAN',
+    PM3: 'OLIVE,TAMARIND',
+    PM4: ' KALIA, FIG, PINE',
+    PM5: 'PANAMA TREE, EBONY',
+    PM6:'INDIAN TAMARIND, 	SLASH PINE',
+    PM7:'MAHOGANY, 	SLASH PINE',
+    PM8:'MAHOGANY, 	SILVER BIRCH',
+    PM9:'YEW, 	SILVER BIRCH',
 
 
+} , 
 ]
+const itreesug =[
+    {
+        IPM: 'SNAKE PLANT , ARECA PALM'
+    
+    }
+    ,{
+        IPM: 'ARECA PALM, SPIDER PLANT'
+    }
+    ,{
+        IPM: 'PEACE LILY , ALOE VERA'
+    }
+
+
+
+    ]
+
 
 
 document.getElementById('primez').innerHTML += ppol
@@ -580,40 +597,65 @@ else if (aq > 400 ) {
 
 
 }
+document.getElementById('itree').innerHTML =   itreesug[Math.floor(Math.random() * 3)].IPM
+if (document.getElementById('prime').innerHTML.includes(' 1')) {
+    document.getElementById('description').innerHTML =  "The particulate matter levels in your area are very low. Inspite of the varying air quality index, which is influenced by various factors, you can be confident of the long-term health of the air around"
 
-
-if (ppol.includes('NO2')) {
-    
-    document.getElementById('otree').innerHTML +=  treessug[0].NO2
-    document.getElementById('itree').innerHTML +=  treessug[0].NO2I   
-    document.getElementById('head').innerHTML +=     '<link rel="stylesheet" href="no.css">'
+    document.getElementById('otree').innerHTML =  treessug[0].PM1
      
 } 
-if (ppol.includes('')) {
-    document.getElementById('itree').innerHTML +=  treessug[0].PMI
-    document.getElementById('otree').innerHTML +=  treessug[0].PM
-    document.getElementById('head').innerHTML +=     '<link rel="stylesheet" href="pm.css">'
 
-}
+if (document.getElementById('prime').innerHTML.includes(' 2')) {
+    document.getElementById('description').innerHTML =  "The particulate matter levels are slightly above normal. though not a source of instant worry, plantation of above mentioned trees can help"
+    document.getElementById('otree').innerHTML =  treessug[0].PM2
+     
+} 
 
-if (ppol.includes('O3')) {
-    document.getElementById('otree').innerHTML +=  treessug[0].O3
-    document.getElementById('itree').innerHTML +=  treessug[0].O3I  
-    document.getElementById('head').innerHTML +=     '<link rel="stylesheet" href="ot.css">'
+if (document.getElementById('prime').innerHTML.includes(' 3')) {
+    document.getElementById('otree').innerHTML =   treessug[0].PM3
+    document.getElementById('description').innerHTML =  "The particulate matter levels in the air are of mild concern. Ensure you take active steps"
 
-}
+} 
 
+if (document.getElementById('prime').innerHTML.includes(' 4')) {
+    document.getElementById('description').innerHTML =  "The particulate matter levels is to be concerned about. It is 8X the advised levels. Take necessary action"
+    document.getElementById('otree').innerHTML = treessug[0].PM4
+     
+} 
 
+if (document.getElementById('prime').innerHTML.includes(' 5')) {
+    document.getElementById('description').innerHTML =  "The particulate matter levels are quite dangerous. It is almost 9X more than advised levels. Attention needed"
+    document.getElementById('otree').innerHTML =  treessug[0].PM5
+     
+} 
 
-if (ppol.includes('SO2')) {
+if (document.getElementById('prime').innerHTML.includes(' 6')) {
+    document.getElementById('description').innerHTML =  "The particulate matter levels are 12X advised levels. You might start experiencing long term effects. Immediate action advised."
+    document.getElementById('otree').innerHTML =  treessug[0].PM6
+    
+     
+} 
+if (document.getElementById('prime').innerHTML.includes(' 7')) {
+    document.getElementById('description').innerHTML =  "The particulate matter levels in the area of very high concern. If you notice this trend to continue for a long time, it is advised to shift to a different locality"
+    document.getElementById('otree').innerHTML =  treessug[0].PM7
+    
+     
+} 
+if (document.getElementById('prime').innerHTML.includes(' 8')) {
+    document.getElementById('description').innerHTML =  "The particulate matter levels in the area of very high concern. If you notice this trend to continue for a long time, it is advised to shift to a different locality"
 
-    document.getElementById('otree').innerHTML +=  treessug[0].SO2
-    document.getElementById('itree').innerHTML +=  treessug[0].SO2I
-    document.getElementById('head').innerHTML +=     '<link rel="stylesheet" href="so.css">'
+    document.getElementById('otree').innerHTML =  treessug[0].PM8
+    
+     
+} 
+if (document.getElementById('prime').innerHTML.includes(' 9')) {
+    document.getElementById('description').innerHTML =  "The particulate matter levels in the area are almost 20X the advised levels. Take very high precaution if it is a temporary condition. If not please escalate this concern as it can be fatal"
+    document.getElementById('otree').innerHTML =  treessug[0].PM9
+    
+     
+} 
 
-}
-
-setTimeout(treer , 500 )
+setTimeout(treer , 800 )
 
 
 
