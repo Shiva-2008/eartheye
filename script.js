@@ -156,7 +156,7 @@ district.options.add(newoption)
     
 }
 
-
+}
 
 function saver() {
     var almost = document.getElementById('slct1')
@@ -467,10 +467,6 @@ if (state == 'Tamil Nadu' ) {
 
     
 }
-}
-
-
-
 document.getElementById('disimg').setAttribute('src' , aq )
 
 var mcom = document.getElementById('majorcomm')
@@ -487,7 +483,21 @@ const timm = setTimeout(loll , 6500)
 
 
 function loll(){
+const treessug = [
 
+{
+    PM: 'Jamun , Conifers such as Pine, ' , 
+    SO2 : 'Alfalfa Plants, '  ,
+    O3:  'Beech trees, ' ,
+    NO2: ''  ,
+    PMI : 'Hoyas, Philodendrons, Annthuriums, ' , 
+    SO2I : 'Alfalfa Plants, '  ,
+    O3I: 'Snake plant, Spider plant, and Golden pothos, '  ,
+    NO2I: 'Peace lily, Corn plant, '  ,
+}
+
+
+]
 
 
 document.getElementById('primez').innerHTML += ppol
@@ -563,37 +573,80 @@ else if (aq > 400 ) {
     preb.style.color = 'white'
     document.getElementById('prime').style.color = 'white'
 
-    prec.innerHTML = '<li>Avoid all activty outdoors</li>  <br> <li>If belonging to a sensitive group remain indoors and follow tips for keeping particle levels low indoor</li> '
-}
-else if (aq > 400 ) {
-    disair.style.color = 'white'
-    precbox.style.color = 'white'
-    preb.style.color = 'white'
-    document.getElementById('prime').style.color = 'white'
     disair.style.backgroundColor = 'maroon'
     mcom.innerHTML = "Toxic and Hazardous"
     prec.innerHTML = '<li>Avoid all activty outdoors</li> <br> <li>If belonging to a sensitive group remain indoors and follow tips for keeping particle levels low indoor</li> '
     precbox.style.backgroundColor = '#4c1818'
 
+
 }
 
-var pollutant = document.getElementById('prime')
-var pollutant = document.getElementById('prime').textContent
 
-if (pollutant.includes('PM')) {
+if (ppol.includes('NO2')) {
+    
+    document.getElementById('otree').innerHTML +=  treessug[0].NO2
+    document.getElementById('itree').innerHTML +=  treessug[0].NO2I   
+    document.getElementById('head').innerHTML +=     '<link rel="stylesheet" href="no.css">'
+     
+} 
+if (ppol.includes('')) {
+    document.getElementById('itree').innerHTML +=  treessug[0].PMI
+    document.getElementById('otree').innerHTML +=  treessug[0].PM
+    document.getElementById('head').innerHTML +=     '<link rel="stylesheet" href="pm.css">'
 
-@@ -604,9 +604,6 @@ setTimeout(treer , 500 )
+}
+
+if (ppol.includes('O3')) {
+    document.getElementById('otree').innerHTML +=  treessug[0].O3
+    document.getElementById('itree').innerHTML +=  treessug[0].O3I  
+    document.getElementById('head').innerHTML +=     '<link rel="stylesheet" href="ot.css">'
+
+}
+
+
+
+if (ppol.includes('SO2')) {
+
+    document.getElementById('otree').innerHTML +=  treessug[0].SO2
+    document.getElementById('itree').innerHTML +=  treessug[0].SO2I
+    document.getElementById('head').innerHTML +=     '<link rel="stylesheet" href="so.css">'
+
+}
+
+setTimeout(treer , 500 )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
 function treer(){
-
+ 
 }
 
-
+  
 }
-    }
-    function dhd() {
+
+function dhd() {
 document.getElementById('precaution').classList.toggle('noco')
 var datqi = document.getElementById('dataaqi').children
 
