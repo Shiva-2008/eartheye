@@ -567,37 +567,16 @@ else if (aq > 400 ) {
 
 }
 
+var pollutant = document.getElementById('prime')
 
-if (ppol.includes('NO2')) {
+if (pollutant.includes('PM')) {
     
-    document.getElementById('otree').innerHTML +=  treessug[0].NO2
-    document.getElementById('itree').innerHTML +=  treessug[0].NO2I   
+    document.getElementById('otree').innerHTML +=  sucess
+    document.getElementById('itree').innerHTML +=  Sucess 
     document.getElementById('head').innerHTML +=     '<link rel="stylesheet" href="no.css">'
      
 } 
-if (ppol.includes('')) {
-    document.getElementById('itree').innerHTML +=  treessug[0].PMI
-    document.getElementById('otree').innerHTML +=  treessug[0].PM
-    document.getElementById('head').innerHTML +=     '<link rel="stylesheet" href="pm.css">'
 
-}
-
-if (ppol.includes('O3')) {
-    document.getElementById('otree').innerHTML +=  treessug[0].O3
-    document.getElementById('itree').innerHTML +=  treessug[0].O3I  
-    document.getElementById('head').innerHTML +=     '<link rel="stylesheet" href="ot.css">'
-
-}
-
-
-
-if (ppol.includes('SO2')) {
-
-    document.getElementById('otree').innerHTML +=  treessug[0].SO2
-    document.getElementById('itree').innerHTML +=  treessug[0].SO2I
-    document.getElementById('head').innerHTML +=     '<link rel="stylesheet" href="so.css">'
-
-}
 
 setTimeout(treer , 500 )
 
