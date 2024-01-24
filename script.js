@@ -559,54 +559,37 @@ else if (aq > 400 ) {
     preb.style.color = 'white'
     document.getElementById('prime').style.color = 'white'
 
+    prec.innerHTML = '<li>Avoid all activty outdoors</li>  <br> <li>If belonging to a sensitive group remain indoors and follow tips for keeping particle levels low indoor</li> '
+}
+else if (aq > 400 ) {
+    disair.style.color = 'white'
+    precbox.style.color = 'white'
+    preb.style.color = 'white'
+    document.getElementById('prime').style.color = 'white'
     disair.style.backgroundColor = 'maroon'
     mcom.innerHTML = "Toxic and Hazardous"
     prec.innerHTML = '<li>Avoid all activty outdoors</li> <br> <li>If belonging to a sensitive group remain indoors and follow tips for keeping particle levels low indoor</li> '
     precbox.style.backgroundColor = '#4c1818'
 
-
 }
 
+var pollutant = document.getElementById('prime')
 var pollutant = document.getElementById('prime').textContent
 
 if (pollutant.includes('PM')) {
+
+@@ -604,9 +604,6 @@ setTimeout(treer , 500 )
+
+}
+
+function treer(){
+
+}
+
+
+}
     
-    document.getElementById('otree').innerHTML +=  sucess
-    document.getElementById('itree').innerHTML +=  Sucess 
-    document.getElementById('head').innerHTML +=     '<link rel="stylesheet" href="no.css">'
-     
-} 
-
-
-setTimeout(treer , 500 )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function treer() {
-  
-}
-}
-
-function dhd() {
+    function dhd() {
 document.getElementById('precaution').classList.toggle('noco')
 var datqi = document.getElementById('dataaqi').children
 
