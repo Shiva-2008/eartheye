@@ -164,7 +164,7 @@ justify-content: space-evenly;
 }
 #comment,  #precaution{
     font-size: 17px;
-   
+   color: black !important;
 }
 .noco{
     display: none;
