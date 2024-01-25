@@ -233,9 +233,10 @@ cursor: pointer;
 }
     .treeimg{
         min-width: 100%;
-        background-color: rgb(255, 255, 183) !important;
+      background-color:   rgb(205, 255, 97) !important;
         min-height: 195px;
         height: fit-content;
+    text-align: center;
       
         }
     
@@ -329,9 +330,9 @@ opacity: 1; }
 }
 .treeimg{
     width: 29%;
-    background-color: rgb(255, 255, 183) !important;
     min-height: 195px;
     height: fit-content;
+    background-color: rgb(205, 255, 97) !important;
   
     }
 
