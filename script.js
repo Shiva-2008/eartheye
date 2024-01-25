@@ -139,9 +139,9 @@ if (state.value == "TN") {
 
 
 
-} else if(state.value == "AP"){
+} else{
 
-    var disarray = ['hello']
+    var disarray = ['Not yet supported']
     
 }
 
@@ -606,14 +606,14 @@ if (document.getElementById('prime').innerHTML.includes(' 1')) {
 } 
 
 if (document.getElementById('prime').innerHTML.includes(' 2')) {
-    document.getElementById('description').innerHTML =  "The particulate matter levels are slightly above normal. though not a source of instant worry, plantation of above mentioned trees can help"
+    document.getElementById('description').innerHTML =  "The particulate matter levels are slightly above normal - 4X the advised levels. though not a source of instant worry, plantation of above mentioned trees can help"
     document.getElementById('otree').innerHTML =  treessug[0].PM2
      
 } 
 
 if (document.getElementById('prime').innerHTML.includes(' 3')) {
     document.getElementById('otree').innerHTML =   treessug[0].PM3
-    document.getElementById('description').innerHTML =  "The particulate matter levels in the air are of mild concern. Ensure you take active steps"
+    document.getElementById('description').innerHTML =  "The particulate matter levels in the air are of mild concern - 6X the advised levels. Ensure you take active steps to reduce its levels"
 
 } 
 
@@ -636,13 +636,13 @@ if (document.getElementById('prime').innerHTML.includes(' 6')) {
      
 } 
 if (document.getElementById('prime').innerHTML.includes(' 7')) {
-    document.getElementById('description').innerHTML =  "The particulate matter levels in the area of very high concern. If you notice this trend to continue for a long time, it is advised to shift to a different locality"
+    document.getElementById('description').innerHTML =  "The particulate matter levels in the area of very high concern - 14X the advised levels. If you notice this trend to continue for a long time, it is advised to shift to a different locality"
     document.getElementById('otree').innerHTML =  treessug[0].PM7
     
      
 } 
 if (document.getElementById('prime').innerHTML.includes(' 8')) {
-    document.getElementById('description').innerHTML =  "The particulate matter levels in the area of very high concern. If you notice this trend to continue for a long time, it is advised to shift to a different locality"
+    document.getElementById('description').innerHTML =  "The particulate matter levels in the area of very high concern - 16X the advised levels.If you notice this trend to continue for a long time, it is advised to shift to a different locality"
 
     document.getElementById('otree').innerHTML =  treessug[0].PM8
     

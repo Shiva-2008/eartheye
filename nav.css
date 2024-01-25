@@ -41,12 +41,12 @@
         min-width: 300px;
     }
 
-    li{
+   .container li{
         list-style-type: none;
         padding: 0px 20px 0px 20px;
         color: white !important;
     }
-    li a{
+   .container li a{
         color: white;
         text-decoration: none !important;
     }
