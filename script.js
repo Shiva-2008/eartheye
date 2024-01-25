@@ -703,3 +703,8 @@ if(document.getElementById('dataaqi').children.item(i).id != 'Tamil Nadu' )
 
 }
 }
+
+
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }

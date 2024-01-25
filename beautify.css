@@ -18,6 +18,9 @@ html{
     width: 95%;
     min-height: 200px;
     margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 0px 0px 16px 16px ;
     background-color: rgb(235, 235, 235);
 
@@ -270,6 +273,7 @@ cursor: pointer;
 display: flex; 
 justify-content: center;  
     width: 100%;
+    font-weight: bold;
 
 }
 #precaution{
@@ -312,7 +316,10 @@ opacity: 1; }
     justify-content: space-evenly;
     
     }
+.disland{
 
+    flex-wrap: wrap;
+}
     .dismaincont{
         width: 300px;
         min-width: unset;
