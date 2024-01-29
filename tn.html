@@ -48,6 +48,43 @@ Earth Eye</div>
 <!-- <marquee class="messenger" scrollamount="7" style="display:flex;align-items: center;height: 80px;"> <img src="tree.gif" height="80px" alt="">&nbsp;&nbsp;&nbsp;&nbsp;Be the solution to run off the pollution &nbsp;&nbsp;&nbsp;&nbsp;<img src="tree.gif" height="80px" alt=""></marquee> -->
 <h2 class="changeloc"> &nbsp; <a href="india.html" style="color:white;">
     Change Location </a></h2>
+    <div id="overlay" onclick="off()"> 
+        <div class="text"> 
+         <div class="modal-content">
+       
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>The Ideal AQI should be below 50</h2>
+          </div>
+          <div class="modal-body">
+            <p id="text"></p>
+           
+          </div>
+      
+          </div>
+          
+        </div>
+    </div>
+
+
+    <div id="overlayt" onclick="offt()"> 
+        <div class="text"> 
+         <div class="modal-content">
+       
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Tree Benefits</h2>
+          </div>
+          <div class="modal-body">
+            <p id="textt"></p>
+           
+          </div>
+      
+          </div>
+          
+        </div>
+    </div>
+ 
 
 <div class="disdiscontmain" id="fakey">
     <div class="discontainer">
@@ -84,7 +121,8 @@ Earth Eye</div>
         <div class="airmain">
                 <div class="index">
               
-                      <div class="number" id="number">
+                      <div class="number tooltip" id="number" onclick="on()">
+                        <div class="tooltiptext">Click to compare with ideal levels</div>
                         <h2 id="aqi" >
                            
                         </h2>
@@ -123,7 +161,9 @@ Earth Eye</div>
         <div class="treeimg" style="text-align: center;">
     <img src="tree.gif" height="200px" alt="">
         </div> 
-<div class="treesug" >
+<div class="treesug tooltip" onclick="ont()">
+    <div class="tooltiptext">Click to know tree benefits</div>
+
     <div id="tree" class="sugbx">
         <h3>Indoor Plants: &nbsp;&nbsp;</h3>
         <div id="itree"></div> 
@@ -146,7 +186,7 @@ Earth Eye</div>
 
 
   <div class="disland" id="disland" >
-    <div><img src="prec.gif" width="130px" height="130px"></div>
+    <div><img src="prec.gif" width="130px" height="130px" id="giffy"></div>
 
    <div><span id="description" style="font-size: 23px;font-weight: 300; width: fit-content;" ></span>  </div> 
   </div>

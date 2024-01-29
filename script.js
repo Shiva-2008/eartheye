@@ -598,19 +598,19 @@ else if (aq > 400 ) {
 
 }
 document.getElementById('itree').innerHTML =   itreesug[Math.floor(Math.random() * 3)].IPM
-if (document.getElementById('prime').innerHTML.includes(' 1')) {
-    document.getElementById('description').innerHTML =  "The particulate matter levels in your area are very low. Inspite of the varying air quality index, which is influenced by various factors, you can be confident of the long-term health of the air around"
 
-    document.getElementById('otree').innerHTML =  treessug[0].PM1
-     
-} 
 
-if (document.getElementById('prime').innerHTML.includes(' 2')) {
+if (document.getElementById('prime').innerHTML.includes(' 2') ) {
     document.getElementById('description').innerHTML =  "The particulate matter levels are slightly above normal - 4X the advised levels. though not a source of instant worry, plantation of above mentioned trees can help"
     document.getElementById('otree').innerHTML =  treessug[0].PM2
+
+} 
+if (document.getElementById('prime').innerHTML.includes(' 1')) {
+    document.getElementById('description').innerHTML =  "The particulate matter levels in your area are very low. Inspite of the varying air quality index, which is influenced by various factors, you can be confident of the long-term health of the air around"
+    document.getElementById('otree').innerHTML =  treessug[0].PM1
+    document.getElementById('giffy').style.display = 'none'
      
 } 
-
 if (document.getElementById('prime').innerHTML.includes(' 3')) {
     document.getElementById('otree').innerHTML =   treessug[0].PM3
     document.getElementById('description').innerHTML =  "The particulate matter levels in the air are of mild concern - 6X the advised levels. Ensure you take active steps to reduce its levels"
@@ -707,4 +707,82 @@ if(document.getElementById('dataaqi').children.item(i).id != 'Tamil Nadu' )
 
 function googleTranslateElementInit() {
     new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+
+
+
+  function on() {
+    document.getElementById("overlay").style.display = "block";
+    darth =  document.getElementById("text").innerHTML
+    var boba = parseInt(document.getElementById("aqi").innerHTML)
+if (boba < 50) {
+    document.getElementById("text").innerHTML = 'You are in a safe place as ideally the air quality index should be below 50'
+}
+if (boba > 50 && boba<150) {
+    fett = parseInt(boba/40)
+    if (fett=1){
+        jar = fett +1
+        document.getElementById("text").innerHTML = 'Ideally the air quality index should be below 50. Your area has an index which is almost ' + jar + ' times the ideal quality. However in urban areas it can peak upto 150. So if the air quality index of your region fluctuates around this levels you need not be immediately worried but should take steps to better the air quality'
+
+    }
+
+    else{
+        document.getElementById("text").innerHTML = 'Ideally the air quality index should be below 50. Your area has an index which is almost ' + fett + ' times the ideal quality. However in urban areas it can peak upto 150. So if the air quality index of your region fluctuates around this levels you need not be immediately worried but should take steps to better the air quality'
+
+    }
+    }
+  }
+  
+  function off() {
+    document.getElementById("overlay").style.display = "none";
+  }
+
+
+
+
+
+  
+
+  function ont() {
+    document.getElementById("overlayt").style.display = "block";
+
+    
+if (document.getElementById('prime').innerHTML.includes(' 2') ) {
+ document.getElementById('textt').innerHTML = "Both  Banyan Peepal produce a significant quantity of oxygen during the day, making it essential components of urban landscapes for reducing pollution and fostering healthier ecosystems. They are excellent purifiers of air"
+} 
+if (document.getElementById('prime').innerHTML.includes(' 1')) {
+    document.getElementById('textt').innerHTML = "Breadfruit/Panapen trees provide food security, and contribute to diversified regenerative agriculture and agroforestry, improved soil conditions and watersheds, and valuable environmental benefits including reduction of CO2 and Partculate Matter." + "<br> </br>" + "Jackfruit is drought-resistant crop, ideal in the fight for soil and water conservation, while also trapping particulates in air"
+
+     
+} 
+if (document.getElementById('prime').innerHTML.includes(' 3')) {
+    document.getElementById('textt').innerHTML = "Evidence shows that olive growing increases atmospheric carbon dioxide fixation in the soil, while Tamarind trees also improve soil fertility, prevent soil erosion, and provide shade, which benefits other crops and wildlife, apart from purifying air"
+} 
+
+if (document.getElementById('prime').innerHTML.includes(' 4')) {
+    document.getElementById('textt').innerHTML = "Figs are some of the most environmentally-conscious fruits out there while the the needles on pine trees are especially important because they help to clean the air by absorbing pollutants such as ozone and nitrogen oxide."
+     
+} 
+
+if (document.getElementById('prime').innerHTML.includes(' 5')) {
+  
+    document.getElementById('textt').innerHTML =   "Ebony helps in carbon sequestration and carbon storage in the tree and its rooting system while panama tree also plays a role in increasing water infiltration and slowing the movement of water"
+} 
+
+if (document.getElementById('prime').innerHTML.includes(' 6')) {
+    document.getElementById('textt').innerHTML =   "Slash Pine trees are also highly adaptable, able to grow in a variety of soils and climates, making them a great choice for reforestation and ecological restoration projects.Indian tamarind shares common benefits while has much more vigour."
+    
+     
+} 
+    
+if (document.getElementById('prime').innerHTML.includes(' 7')) {
+    document.getElementById('textt').innerHTML =   "Mahogany trees release the sulphur compound that can reduce the atmospheric warming led by greenhouse gases, while slash Pine trees are also highly adaptable, able to grow in a variety of soils and climates, making them a great choice for reforestation and ecological restoration projects"
+     
+} 
+  }
+  
+  function offt() {
+    document.getElementById("overlayt").style.display = "none";
+
+
   }
